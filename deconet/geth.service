@@ -1,0 +1,12 @@
+[Unit]
+Description=Geth
+
+[Service]
+Type=simple
+User=root
+Restart=always
+WorkingDirectory=/home/ubuntu
+ExecStart=/usr/bin/geth --config /home/ubuntu/config.toml
+
+[Install]
+WantedBy=default.target
